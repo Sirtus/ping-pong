@@ -1,0 +1,14 @@
+
+State Machine - |ping_pong|uart_receiver:receiver|state_m
+Name state_m.clear state_m.stop_b state_m.data_b state_m.start_b state_m.idle 
+state_m.idle 0 0 0 0 0 
+state_m.start_b 0 0 0 1 1 
+state_m.data_b 0 0 1 0 1 
+state_m.stop_b 0 1 0 0 1 
+state_m.clear 1 0 0 0 1 
+
+State Machine - |ping_pong|board:board_controller|game_state
+Name game_state.end_game game_state.play game_state.idle 
+game_state.idle 0 0 0 
+game_state.play 0 1 1 
+game_state.end_game 1 0 1 
